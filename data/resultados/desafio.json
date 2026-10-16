@@ -1,0 +1,394 @@
+{
+ "circuito": {
+  "qubits": 10,
+  "profundidade": 17,
+  "portas_2q": 27
+ },
+ "grafo": [
+  {
+   "a": 0,
+   "b": 1,
+   "portas": 3
+  },
+  {
+   "a": 1,
+   "b": 2,
+   "portas": 3
+  },
+  {
+   "a": 2,
+   "b": 3,
+   "portas": 3
+  },
+  {
+   "a": 3,
+   "b": 4,
+   "portas": 3
+  },
+  {
+   "a": 4,
+   "b": 5,
+   "portas": 3
+  },
+  {
+   "a": 5,
+   "b": 6,
+   "portas": 3
+  },
+  {
+   "a": 6,
+   "b": 7,
+   "portas": 3
+  },
+  {
+   "a": 7,
+   "b": 8,
+   "portas": 3
+  },
+  {
+   "a": 8,
+   "b": 9,
+   "portas": 3
+  }
+ ],
+ "corte_mais_barato": {
+  "bloco": [
+   0,
+   1,
+   2,
+   3,
+   4
+  ],
+  "portas_cortadas": 3
+ },
+ "reuso_pares": [],
+ "plano": {
+  "cortes": [
+   "Gate Cut",
+   "Gate Cut",
+   "Gate Cut"
+  ],
+  "n_cortes": 3,
+  "overhead": 729.0,
+  "subcircuitos": {
+   "0": 5,
+   "1": 5
+  }
+ },
+ "otimizacao_metade": {
+  "opt0": {
+   "qubits": 5,
+   "profundidade": 52,
+   "portas_2q": 12
+  },
+  "opt3": {
+   "qubits": 5,
+   "profundidade": 40,
+   "portas_2q": 12
+  }
+ },
+ "layouts": {
+  "total": 60,
+  "melhores": [
+   {
+    "ordem": "0-1-2-3-4",
+    "portas_2q": 12,
+    "profundidade": 26,
+    "esp": 0.957246263522814
+   },
+   {
+    "ordem": "0-1-2-4-3",
+    "portas_2q": 15,
+    "profundidade": 30,
+    "esp": 0.9517490279798241
+   },
+   {
+    "ordem": "0-1-3-2-4",
+    "portas_2q": 15,
+    "profundidade": 32,
+    "esp": 0.9471496269393352
+   },
+   {
+    "ordem": "1-0-2-3-4",
+    "portas_2q": 15,
+    "profundidade": 35,
+    "esp": 0.9451368498993324
+   },
+   {
+    "ordem": "0-2-1-3-4",
+    "portas_2q": 15,
+    "profundidade": 34,
+    "esp": 0.94494643298305
+   }
+  ],
+  "pior": {
+   "ordem": "2-4-0-1-3",
+   "portas_2q": 42,
+   "profundidade": 87,
+   "esp": 0.8581954295057074
+  }
+ },
+ "baseline_10q": {
+  "qubits": 10,
+  "profundidade": 62,
+  "portas_2q": 27,
+  "esp": 0.9438350111677368
+ },
+ "execucao": {
+  "exato": [
+   0.003706773846719218,
+   0.03137341507780479
+  ],
+  "reconstruido": [
+   0.003353906249999984,
+   0.04289299999999821
+  ],
+  "erro": [
+   0.0003528675967192341,
+   0.011519584922193418
+  ],
+  "n_experimentos": 432,
+  "shots_totais": 1728000,
+  "profundidade_media": 40.407407407407405,
+  "portas_2q_media": 12.0,
+  "esp_medio": 0.956986148705671,
+  "plano": {
+   "cortes": [
+    "Gate Cut",
+    "Gate Cut",
+    "Gate Cut"
+   ],
+   "n_cortes": 3,
+   "overhead": 729.0,
+   "subcircuitos": {
+    "0": 5,
+    "1": 5
+   }
+  },
+  "seed_hw": 42,
+  "seed_sampler": 2026,
+  "ruido": true,
+  "tempo_s": 83.3
+ },
+ "ideal": {
+  "exato": [
+   0.003706773846719218,
+   0.03137341507780479
+  ],
+  "reconstruido": [
+   0.003239750000000015,
+   0.04138840624999862
+  ],
+  "erro": [
+   0.000467023846719203,
+   0.01001499117219383
+  ],
+  "n_experimentos": 432,
+  "shots_totais": 1728000,
+  "profundidade_media": 40.407407407407405,
+  "portas_2q_media": 12.0,
+  "esp_medio": 0.956986148705671,
+  "plano": {
+   "cortes": [
+    "Gate Cut",
+    "Gate Cut",
+    "Gate Cut"
+   ],
+   "n_cortes": 3,
+   "overhead": 729.0,
+   "subcircuitos": {
+    "0": 5,
+    "1": 5
+   }
+  },
+  "seed_hw": 42,
+  "seed_sampler": 2026,
+  "ruido": false,
+  "tempo_s": 66.5
+ },
+ "perdas": [
+  {
+   "qubit_perdido": "nenhum",
+   "qubits_restantes": [
+    0,
+    1,
+    2,
+    3,
+    4
+   ],
+   "largura": 5,
+   "cortes": 3,
+   "overhead": 729.0
+  },
+  {
+   "qubit_perdido": 0,
+   "qubits_restantes": [
+    1,
+    2,
+    3,
+    4
+   ],
+   "largura": 4,
+   "cortes": 6,
+   "overhead": 531441.0
+  },
+  {
+   "qubit_perdido": 1,
+   "qubits_restantes": [
+    2,
+    3,
+    4
+   ],
+   "largura": 3,
+   "cortes": 9,
+   "overhead": 387420489.0
+  },
+  {
+   "qubit_perdido": 2,
+   "qubits_restantes": [
+    0,
+    1
+   ],
+   "largura": 2,
+   "cortes": 12,
+   "overhead": 282429536481.0
+  },
+  {
+   "qubit_perdido": 3,
+   "qubits_restantes": [
+    0,
+    1,
+    2
+   ],
+   "largura": 3,
+   "cortes": 9,
+   "overhead": 387420489.0
+  },
+  {
+   "qubit_perdido": 4,
+   "qubits_restantes": [
+    0,
+    1,
+    2,
+    3
+   ],
+   "largura": 4,
+   "cortes": 6,
+   "overhead": 531441.0
+  }
+ ],
+ "observaveis": [
+  "Z0 Z9",
+  "Z4 Z5"
+ ],
+ "estabilidade": [
+  {
+   "exato": [
+    0.003706773846719218,
+    0.03137341507780479
+   ],
+   "reconstruido": [
+    0.00930999999999996,
+    0.04083071874999817
+   ],
+   "erro": [
+    0.0056032261532807425,
+    0.009457303672193378
+   ],
+   "n_experimentos": 432,
+   "shots_totais": 1728000,
+   "profundidade_media": 40.407407407407405,
+   "portas_2q_media": 12.0,
+   "esp_medio": 0.956986148705671,
+   "plano": {
+    "cortes": [
+     "Gate Cut",
+     "Gate Cut",
+     "Gate Cut"
+    ],
+    "n_cortes": 3,
+    "overhead": 729.0,
+    "subcircuitos": {
+     "0": 5,
+     "1": 5
+    }
+   },
+   "seed_hw": 42,
+   "seed_sampler": 42,
+   "ruido": true,
+   "tempo_s": 84.2
+  },
+  {
+   "exato": [
+    0.003706773846719218,
+    0.03137341507780479
+   ],
+   "reconstruido": [
+    0.0023500937500000266,
+    0.022824593749999476
+   ],
+   "erro": [
+    0.0013566800967191915,
+    0.008548821327805316
+   ],
+   "n_experimentos": 432,
+   "shots_totais": 1728000,
+   "profundidade_media": 43.333333333333336,
+   "portas_2q_media": 12.0,
+   "esp_medio": 0.9655544773813522,
+   "plano": {
+    "cortes": [
+     "Gate Cut",
+     "Gate Cut",
+     "Gate Cut"
+    ],
+    "n_cortes": 3,
+    "overhead": 729.0,
+    "subcircuitos": {
+     "0": 5,
+     "1": 5
+    }
+   },
+   "seed_hw": 7,
+   "seed_sampler": 7,
+   "ruido": true,
+   "tempo_s": 83.5
+  },
+  {
+   "exato": [
+    0.003706773846719218,
+    0.03137341507780479
+   ],
+   "reconstruido": [
+    0.0037492812499999705,
+    0.01412471874999934
+   ],
+   "erro": [
+    4.250740328075233e-05,
+    0.01724869632780545
+   ],
+   "n_experimentos": 432,
+   "shots_totais": 1728000,
+   "profundidade_media": 33.583333333333336,
+   "portas_2q_media": 12.0,
+   "esp_medio": 0.9652704182305857,
+   "plano": {
+    "cortes": [
+     "Gate Cut",
+     "Gate Cut",
+     "Gate Cut"
+    ],
+    "n_cortes": 3,
+    "overhead": 729.0,
+    "subcircuitos": {
+     "0": 5,
+     "1": 5
+    }
+   },
+   "seed_hw": 2024,
+   "seed_sampler": 2024,
+   "ruido": true,
+   "tempo_s": 82.9
+  }
+ ]
+}

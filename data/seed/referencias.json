@@ -1,0 +1,144 @@
+{
+  "_nota": "Valores públicos curados com link para a fonte primária. 'verificar' = número vindo de cobertura secundária.",
+  "gri_timeline": [
+    {
+      "relatorio": "GRI Quantum Threat Timeline Report 2025",
+      "publicado": "2026-03",
+      "ano_survey": 2025,
+      "respondentes": 26,
+      "pontos": [
+        {
+          "horizonte_anos": 10,
+          "p_baixa": 0.28,
+          "p_alta": 0.49
+        },
+        {
+          "horizonte_anos": 15,
+          "p_baixa": 0.51,
+          "p_alta": 0.7
+        }
+      ],
+      "url": "https://globalriskinstitute.org/publication/quantum-threat-timeline-report-2025b/",
+      "status": "verificado na página do GRI"
+    },
+    {
+      "relatorio": "GRI Quantum Threat Timeline Report 2024",
+      "publicado": "2024-12",
+      "ano_survey": 2024,
+      "respondentes": 32,
+      "pontos": [
+        {
+          "horizonte_anos": 5,
+          "p_baixa": null,
+          "p_alta": 0.14
+        },
+        {
+          "horizonte_anos": 10,
+          "p_baixa": 0.19,
+          "p_alta": 0.34
+        }
+      ],
+      "url": "https://globalriskinstitute.org/mp-files/quantum-threat-timeline-report-2024-executive-summary.pdf",
+      "status": "verificar"
+    }
+  ],
+  "normas": [
+    {
+      "id": "FIPS 203",
+      "nome": "ML-KEM",
+      "data": "2024-08-13",
+      "url": "https://csrc.nist.gov/pubs/fips/203/final"
+    },
+    {
+      "id": "FIPS 204",
+      "nome": "ML-DSA",
+      "data": "2024-08-13",
+      "url": "https://csrc.nist.gov/pubs/fips/204/final"
+    },
+    {
+      "id": "FIPS 205",
+      "nome": "SLH-DSA",
+      "data": "2024-08-13",
+      "url": "https://csrc.nist.gov/pubs/fips/205/final"
+    },
+    {
+      "id": "NIST IR 8547 (ipd)",
+      "nome": "Transition to PQC Standards",
+      "data": "2024-11-12",
+      "marcos": {
+        "deprecado_apos": 2030,
+        "proibido_apos": 2035
+      },
+      "nota": "RSA/ECC com 112 bits deprecados após 2030; algoritmos vulneráveis proibidos após 2035. Rascunho.",
+      "url": "https://csrc.nist.gov/pubs/ir/8547/ipd"
+    }
+  ],
+  "estimativas_shor": [
+    {
+      "alvo": "RSA-2048",
+      "trabalho": "Gidney e Ekerå 2019 (Quantum 5, 433, 2021)",
+      "qubits_fisicos": 20000000,
+      "qubits_logicos": null,
+      "toffoli": 3000000000,
+      "tempo": "8 h",
+      "premissas": "grade 2D, erro 0.1%, ciclo 1 us, reação 10 us",
+      "url": "https://arxiv.org/abs/1905.09749",
+      "ano": 2019
+    },
+    {
+      "alvo": "RSA-2048",
+      "trabalho": "Gidney 2025",
+      "qubits_fisicos": 1000000,
+      "qubits_logicos": null,
+      "toffoli": null,
+      "tempo": "< 1 semana",
+      "premissas": "mesmas de 2019; aritmética de resíduos aproximada, yoked surface codes, magic state cultivation",
+      "url": "https://arxiv.org/abs/2505.15917",
+      "ano": 2025
+    },
+    {
+      "alvo": "ECDLP-256",
+      "trabalho": "Roetteler, Naehrig, Svore, Lauter 2017",
+      "qubits_fisicos": null,
+      "qubits_logicos": 2330,
+      "toffoli": 126000000000,
+      "tempo": null,
+      "premissas": "limite superior 9n+2ceil(log2 n)+10 qubits; 448 n^3 log2 n + 4090 n^3 Toffoli",
+      "url": "https://arxiv.org/abs/1706.06752",
+      "ano": 2017
+    },
+    {
+      "alvo": "ECDLP-256",
+      "trabalho": "Häner, Jaques, Naehrig, Roetteler, Soeken 2020",
+      "qubits_fisicos": null,
+      "qubits_logicos": 2124,
+      "toffoli": null,
+      "tempo": null,
+      "premissas": "T-count 119x menor que 2017",
+      "url": "https://arxiv.org/abs/2001.09580",
+      "ano": 2020
+    },
+    {
+      "alvo": "ECDLP-256",
+      "trabalho": "Litinski 2023 (PsiQuantum)",
+      "qubits_fisicos": null,
+      "qubits_logicos": null,
+      "toffoli": 50000000,
+      "tempo": null,
+      "premissas": "Toffoli por chave amortizado em instâncias paralelas; ~200M para instância única (segundo arXiv:2603.28846)",
+      "url": "https://arxiv.org/abs/2306.08585",
+      "ano": 2023
+    },
+    {
+      "alvo": "ECDLP-256 (secp256k1)",
+      "trabalho": "arXiv:2603.28846 (2026)",
+      "qubits_fisicos": null,
+      "qubits_logicos": 1200,
+      "toffoli": 90000000,
+      "tempo": "~23 min (reação 10 us)",
+      "premissas": "variante alternativa: 1450 qubits lógicos e 70M Toffoli",
+      "url": "https://arxiv.org/abs/2603.28846",
+      "ano": 2026
+    }
+  ]
+}
